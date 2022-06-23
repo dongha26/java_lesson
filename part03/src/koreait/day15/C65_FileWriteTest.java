@@ -8,7 +8,7 @@ public class C65_FileWriteTest {
 
 	public static void main(String[] args){
 		
-	String filename = "C:\\Users\\ITCS\\iclass05\\자바테스트2.txt";   
+	String filename = "C:\\Users\\User\\iclass05\\test";   
 	
 	File file = new File(filename);
 	//PrintWriter : 출력 기능을 갖는 클래스 

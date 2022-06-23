@@ -45,11 +45,11 @@ public class C31_RandomEx {
 		System.out.println("90~100 \t80~89\t70~79\t60~69\t60¹Ì¸¸");
 		System.out.println("-----------------------------------------------------------");
 		for (int i = 0; i < counts.length; i++) {
-			System.out.printf("%7d",counts[i]);
+			System.out.printf("%5d",counts[i]);
 		}
 		System.out.println();
 		for (int i = 0; i < counts.length; i++) {
-			System.out.printf("%7.1f%%",(double)counts[i]/koreans.length*100);
+			System.out.printf("%5.1f%%",(double)counts[i]/koreans.length*100);
 		}
 
 		}

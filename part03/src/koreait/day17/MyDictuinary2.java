@@ -22,7 +22,7 @@ public class MyDictuinary2 {
 			try {
 				System.out.println("파일에 저장할까요?(Y or N)>>");
 				if(ssc.nextLine().equals("Y"))
-			read(myword,"C:\\Users\\ITCS\\나의영한사전");
+			read(myword,"C:\\Users\\User\\iclass05\\나의영한사전.txt");
 				else
 					System.out.println("파일을 새로 만듭니다");
 		} catch (FileNotFoundException e1) {
@@ -89,7 +89,7 @@ public class MyDictuinary2 {
 			System.out.println("파일에 저장할까요?(Y or N)>>");
 			if(ssc.nextLine().equals("Y"))
 				
-			save(myword,"C:\\Users\\ITCS\\나의영한사전");
+			save(myword,"C:\\Users\\User\\iclass05\\나의영한사전");
 			else 
 				System.out.println("파일을 새로 만듭니다.");
 		} catch (FileNotFoundException e) {

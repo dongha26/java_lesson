@@ -11,7 +11,7 @@ public class MyDictuinary {
 	public static void main(String[] args) {
 //		HashMap<String,String> note = new HashMap<>();
 		TreeMap<String,String> note = new TreeMap<String,String>(); // 이진 검색한 구조로 Map을 생성 : 정렬이되는 Map
-		List<Word>myword = new ArrayList<Word>(); //*** mydic를 mywords로 바꿔서 구현해보기***
+		List<Word>myword = new ArrayList<Word>(); //*** note를 mywords로 바꿔서 구현해보기***
 		String sel,kor,eng;
 		int lel;
 		

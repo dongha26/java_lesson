@@ -1,5 +1,5 @@
 package koreait.day16;
-
+//김동하
 // 조사하세요 : enum(열서형 타입) -> 상수만 정의한 클래스
 public class Word {
 	
