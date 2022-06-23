@@ -2,7 +2,7 @@ package koreait.day06;
 
 import java.util.Arrays;
 import java.util.Random;
-
+//¼öÁ¤
 public class C31_RandomEx {
 
 	public static void main(String[] args) {
