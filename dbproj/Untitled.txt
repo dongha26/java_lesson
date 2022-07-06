@@ -1,0 +1,39 @@
+﻿1. jdbc 라이브러리 추가
+	ㄴ 프로젝트 우클릭 -> 메뉴중에 Build Path
+	  -> Configure build path...
+	  -> Libraries 탭 -> Add External jar
+	  -> 파일 ojdbc6. jar 찾아서 추가
+	ㄴ 프로젝트 탐색기에 확인 - Referenced Libraries
+데이터베이스 연결 : Connection 클래스 메소드를 사용
+   ㄴ	그 전에 JDBC 드라이버를 메모리에 로드 시켜야 합니다.
+           ㄴ  Class.forName("패키지명.클래스")
+	                                            ㄴ 오라클 드라이버 클래스
+	    ㄴ 2) Drivermanager.getConnection 메소드 실행. 인자 url,user,password db 접속 정보를 이용하여
+	    	Connection 객체 생성
+	    	
+3. DBConnect 클래스
+
+- 2번에서 만든 oracleconnectionutil 클래스 connect()메소드 테스트
+- 정상연결 확인이 되면 SQL insert 실행 테스트
+
+4. insertTest 클래스
+- 3번과 동일한 insert SQL 테스트
+- TBL_CUSTOM 테이블에 INSERT
+- PreparedStatement 를 이용합니다 실행에 필요한 데이터를 동적 바인딩을 합니다 . ? 기호사용
+- PreparedStatement 인터페이스입니다. PreparedStatement 타입 참조변수는 PreparedStatement의 
+추상메소드를 구현한 구현객체 conn.PreparedStatement(sql)는 사용하는 오라클 드라이버 클래스를 통해 sql을 저장하고 실행할 객체가 생성됩니다
+
+5. InsertBuyTest 클래스
+- tbl_buy 테이블에 insert                     	
+	  
+	  
+6. SelectTest
+
+1) select SQL은 pstmt.executeQuery()메소드 실행
+2)				실행결과 객체는 ResultSet 타입으로 참조
+3) rs.next() 메소드는 조회 결과 행들을 순서대로 접근합니다. 행이 있으면 참, 없으면 거짓 리턴
+4) rs.getXXX()은 특정컬럼 값 가져오기
+참고 : psmt.setXXXX()은 SQL실행에 필요한 값 바인딩(전달)
+
+
+7. SELECT 결과를 자바에서 저장하기 -> List사용 , List<E> E는 제너릭 타입
