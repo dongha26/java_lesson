@@ -27,8 +27,8 @@ public class CustomVo {
    //toString ÀçÁ¤ÀÇ
    @Override
    public String toString() {
-      return "CustomVo [custom_id=" + custom_id + ", name=" + name + ", email=" + email + ", age=" + age
-            + ", reg_date=" + reg_date + "]";
+      return "[custom_id=" + custom_id + ", name=" + name + ", email=" + email + ", age=" + age
+            + ", reg_date=" + reg_date + "]\n";
    }
    
    //getter,setter

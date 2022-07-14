@@ -37,3 +37,38 @@
 
 
 7. SELECT 결과를 자바에서 저장하기 -> List사용 , List<E> E는 제너릭 타입
+
+SelectVoTest 클래스 : 테이블 컬럼과 vo 객체 필드 매핑 에시
+SelectListTest 클래스 : 조회결과 n개 행일 때 while 반복하면서 List.add(vo)
+
+8. DML 위주의 SQL 실행이 반복됩니다. DML : insert,update,delete,select
+--> DAO(Datebase Access Object) 클래스에 자주 사용되는 SQL 메소드 정의.
+
+참고 : Dao 클래스를 이용해서 DML 실행 메소드에 필요한 데이터 또는 리턴되는 데이터는 테이블의 컬럼 구성과
+같게 VO클래스를 만들어서 사용
+- VO value object : 한번 저장한 값 변경하지 않는다. (불변객체) getter만 사용
+- DTO data transfer object : 필드값이 변경될 수 있다.(가변객체) getter/setter 사용
+
+
+9. 외부평가 샘플문제 SQL과 JDBC 풀이
+hrd.vo 패키지
+	ㄴ MemberVo
+	ㄴ SaleVo
+hrd.dao 패키지
+	ㄴ HrdDao : 회원목록조회, 회원매출조회
+hrd.main 패키지
+	ㄴ HrdMain : Dao 실행하기
+	
+10. SQL PLUSㅇ 에서 SQL 실행하기
+*hrd_0712.sql -> sqlplus에서 작성한 것 메모장에 저장해놓기
+
+*sqlplus에서 select출력결과 보기 적정한 설정(문제에 따라서 100은 150,10은 20등 변경가능)
+	SQL > set linesize 100
+	SQL > set pagesize 10
+
+*sqlplus 에서 여러줄에 걸쳐 sql문 작성하다가 오타등등 이유로 중단하고 싶으면 빈줄로 엔터
+이전에 입력한 명령 가져오고 싶으면 위/아래 방향기
+*sqlplus의 auto commit확인
+	SQL> show autocommit;
+	autocommit이 OFF로 되어있으면 아래 명령어 실행.(jdbc 구현일 때 데이터 보이도록 해야함)
+	SQL> set autocommit on; 또는 직접 commit;

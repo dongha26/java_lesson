@@ -16,7 +16,7 @@ public class OracleConnectionUtil {
 		String url = "jdbc:oracle:thin:@localhost:1521:XE";   //데이터베이스 URL - 디비버에서 확인가능합니다.
 					 // jdbc프로토콜,오라클 지정, localhost는 서버에 접속시 ip로 대체,1521은 오라클 포트
 		String driver="oracle.jdbc.driver.OracleDriver";     //오라클 드라이버클래스(패키지명.클래스명)
-		String user ="C##IDEV";				//접속할 계정 정보 - 계정이름
+		String user ="c##idev";				//접속할 계정 정보 - 계정이름
 		String password="1234";				//            ㄴ 패스워드
 		
 		try {
