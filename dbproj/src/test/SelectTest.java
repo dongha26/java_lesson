@@ -16,7 +16,7 @@ public class SelectTest {
 		// select 쿼리 결과로 만들어지는 객체를 참조하는 인터페이스 참조타입 변수
 		ResultSet rs = null;
 		
-		String sql = "SELECT  * FROM TBL_CUSTOM";
+		String sql = "SELECT  * FROM TBL_CUSTOM#";
 		// select 실행 결과 행의 개수는 개발시점에서 알 수 없음. 컬럼명은 알고있음.
 		try {
 			pstmt = conn.prepareStatement(sql);

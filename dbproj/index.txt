@@ -72,3 +72,7 @@ hrd.main 패키지
 	SQL> show autocommit;
 	autocommit이 OFF로 되어있으면 아래 명령어 실행.(jdbc 구현일 때 데이터 보이도록 해야함)
 	SQL> set autocommit on; 또는 직접 commit;
+	
+11. 오라클 create or replace procedure로 정의한 저장(stored) 프로시저로 실행
+
+- proc 패키지 ProcedureTest.java
