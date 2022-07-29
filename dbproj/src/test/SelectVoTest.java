@@ -15,7 +15,7 @@ public class SelectVoTest {
 
    public static void main(String[] args) {
       
-      String sql ="SELECT * FROM TBL_CUSTOM WHERE CUSTOM_ID =?"; // 기본키 컬럼으로 조회는 if로 rs.next()
+      String sql ="SELECT * FROM TBL_CUSTOM# WHERE CUSTOM_ID =?"; // 기본키 컬럼으로 조회는 if로 rs.next()
 //      String sql ="SELECT * FROM CUSTOM# WHERE age =25";  // (조회결과가 n개일때)while 로 rs.next() 반복
       Scanner sc = new Scanner(System.in);
       ResultSet rs = null;

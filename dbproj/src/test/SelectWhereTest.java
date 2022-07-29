@@ -16,7 +16,7 @@ public class SelectWhereTest {
 		Connection conn = OracleConnectionUtil.connect();
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		String sql = "SELECT  NAME,EMAIL  FROM TBL_CUSTOM WHERE CUSTOM_ID = ? ";
+		String sql = "SELECT  NAME,EMAIL  FROM TBL_CUSTOM# WHERE CUSTOM_ID = ? ";
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("고객id를 입력하세요");
